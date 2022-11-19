@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Inter', sans-serif;
+}
+
+body {
+	background-color: #333;
+}
+
+.form {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1em;
+}
+
+#search-bar {
+	margin: 0;
+	border: none;
+	background-color: rgb(66, 66, 66);
+	padding: 1em;
+	color: #fff;
+	font-size: 2em;
+	flex-grow: 0.25;
+	border-radius: 0.25em;
+	transition: 300ms;
+}
+
+#search-bar:focus {
+	outline: #222 solid 0.5rem;
+}
+
+#search-btn {
+	width: min-content;
+	border: none;
+	padding: 0.75em;
+	color: #fff;
+	font-size: 1.5em;
+	background-color: #222;
+	border-radius: 1rem;
+	transition: 300ms;
+	cursor: pointer;
+}
+
+#search-btn:focus {
+	outline: rgb(66, 66, 66) solid 0.25rem;
+}
+#search-btn:hover {
+	background-color: rgb(27, 27, 27);
+}
+
+#error {
+	color: rgb(143, 40, 40);
+	text-align: center;
+}
+
+.explanation {
+	width: 60%;
+	margin: auto;
+	padding: 1em;
+	color: #999;
+}
+
+.explanation .title {
+	font-size: 4rem;
+}
+
+.explanation .phonetic {
+	font-size: 3rem;
+	font-style: italic;
+	margin-bottom: 0.5em;
+}
+
+.explanation h3 {
+	font-size: 1.75rem;
+}
+
+.explanation .part-of-speech {
+	margin-bottom: 2em;
+}
+
+.explanation .part-of-speech h4 {
+	font-size: 1.25rem;
+	margin-top: 0.5em;
+}
