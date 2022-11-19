@@ -91,3 +91,54 @@ body {
 	font-size: 1.25rem;
 	margin-top: 0.5em;
 }
+
+@media only screen and (max-width: 850px) {
+	.form {
+		height: 30vh;
+		align-items: center;
+		width: 80%;
+		flex-wrap: wrap;
+		flex-basis: 160px;
+		margin: auto;
+		gap: 0;
+		margin: 1em auto;
+	}
+	#search-bar {
+		flex: 1 0 80%;
+		font-size: 1em;
+	}
+
+	#search-btn {
+		flex: 1 0 100%;
+		font-size: 1em;
+	}
+
+	.explanation .title {
+		text-align: center;
+		font-size: 3rem;
+	}
+
+	.explanation .explanation {
+		text-align: center;
+	}
+
+	.explanation .phonetic {
+		font-size: 2rem;
+	}
+
+	.explanation h3 {
+		font-size: 1.5rem;
+	}
+
+	.explanation .part-of-speech {
+		margin-bottom: 1em;
+	}
+
+	.explanation .part-of-speech h4 {
+		font-size: 1rem;
+	}
+
+	.explanation p {
+		font-size: 0.75rem;
+	}
+}
