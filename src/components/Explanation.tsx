@@ -7,21 +7,20 @@ export default function Explanation(props: any) {
 		return (
 			<div className='part-of-speech' key={Math.random() * 1000}>
 				<h3>{meaning.partOfSpeech}</h3>
-				<p>
-					{meaning.definitions
-						.map((definition: any) => definition.definition)
-						.join(' ')}
-				</p>
+
+				{meaning.definitions.map((definition: any) => {
+					return <li>{definition.definition}</li>;
+				})}
 				{meaning.synonyms.length > 0 && (
 					<>
 						<h4>Synonyms</h4>
-						<p>{meaning.synonyms.join(', ')}</p>
+						<p>{meaning.synonyms.join(', ').toLowerCase()}</p>
 					</>
 				)}
 				{meaning.antonyms.length > 0 && (
 					<>
 						<h4>Antonyms</h4>
-						<p>{meaning.antonyms.join(', ')}</p>
+						<p>{meaning.antonyms.join(', ').toLowerCase()}</p>
 					</>
 				)}
 			</div>

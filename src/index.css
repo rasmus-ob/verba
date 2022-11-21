@@ -91,6 +91,14 @@ body {
 	font-size: 1.25rem;
 	margin-top: 0.5em;
 }
+.explanation .part-of-speech > p,
+li {
+	margin: 1em;
+}
+
+.explanation .part-of-speech li {
+	list-style: square;
+}
 
 @media only screen and (max-width: 850px) {
 	.form {
